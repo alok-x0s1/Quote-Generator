@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Poppins&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Ysabeau+Infant:ital,wght@0,1..1000;1,1..1000&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ysabeau Infant", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 21px;
+  min-height: 100vh;
+  background-color: #C4BCB2;
+}
+
+.quote-box {
+  padding: 30px 30px 25px;
+  max-width: 480px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  border: 1px solid #1C1C19;
+  animation: grow 0.5s ease-in-out forwards;
+}
+
+.quote-box header {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.quote {
+  margin: 25px 0; 
+  display: flex;
+  justify-self: center;
+  color: #1C1C19;
+  animation: fade 2s ease-in-out forwards alternate;
+}
+
+.quote i {
+  font-size: 16px;
+}
+
+.quote i:first-child{
+  margin: 3px 10px 0 0;
+}
+
+.quote i:last-child{
+  display: flex;
+  align-items: flex-end;
+  margin: 0 0 3px 10px;
+}
+
+.quote p {
+  font-size: 22px;
+  text-align: center;
+  word-break: break-all;
+}
+
+.author {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  font-size: 18px;
+  font-style: italic;
+  animation: fade 2s ease-in-out forwards alternate;
+}
+
+.author span {
+  margin: -7px 5px 0 0;
+  font-family: monospace;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.buttons .links {
+  display: flex;
+}
+
+.buttons .links i {
+  height: 47px;
+  margin: 0 5px;
+  font-size: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 47px;
+  border: 2px solid #1C1C19;
+  color: #1C1C19;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.buttons .links i:hover {
+  background-color: #1C1C19;
+  color: #C4BCB2;
+}
+
+.generate-btn {
+  background-color: #1C1C19;
+  color: #C4BCB2;
+  padding: 12px 22px;
+  width: fit-content;
+  border: 2px solid transparent;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.5s ease;
+}
+
+.generate-btn.loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.generate-btn:hover {
+  border-color: #1C1C19;
+  color: #1C1C19;
+  background: transparent;
+}
+
+@keyframes grow {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
