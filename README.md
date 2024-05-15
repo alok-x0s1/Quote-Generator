@@ -4,7 +4,7 @@ Welcome to our Random Quote Generator website! This project is powered by JavaSc
 
 [Random quote generator - @lokyadav](https://quote-generator-alok.vercel.app/)
 
-![Live](/LivePreview.png)
+![Live](/LivePreview.png){:target="_blank"}
 
 ## Features
 
