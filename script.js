@@ -50,4 +50,4 @@ shareOnTwitter.addEventListener('click', () => {
     window.open(tweetUrl, "_blank")
 })
 
-window.setInterval(displayQuote, 15000)
+window.setInterval(displayQuote, 30000)
