@@ -2,9 +2,9 @@
 
 Welcome to our Random Quote Generator website! This project is powered by JavaScript and offers a variety of features to inspire and uplift users with a diverse selection of quotes.
 
-[Random quote generator - @lokyadav](https://quote-generator-alok.vercel.app/)
+[Random quote generator - @lokyadav](https://quote-generator-alok.vercel.app/){:target="_blank" rel="noopener"}
 
-![Live](/LivePreview.png){:target="_blank" rel="noopener"}
+![Live](/LivePreview.png)
 
 ## Features
 
